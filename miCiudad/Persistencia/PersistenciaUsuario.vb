@@ -3,6 +3,10 @@
 Public Class PersistenciaUsuario
     Dim conexion As Npgsql.NpgsqlConnection
 
+    Public Sub New()
+
+    End Sub
+
     Public Sub modificarUsuario(usuarito As ClaseUsuario)
         Try
 
@@ -30,7 +34,7 @@ Public Class PersistenciaUsuario
         End Try
     End Sub
 
-    Public Sub altaUsuario(usuarito As ClaseUsuario)
+    Public Function altaUsuario(usuarito As ClaseUsuario) As Boolean
         Try
 
             Dim classcnn = New Conexion
@@ -39,7 +43,7 @@ Public Class PersistenciaUsuario
             Dim cmd = New Npgsql.NpgsqlCommand
             cmd.Connection = conexion
             Dim cadenaComandos As String
-            cadenaComandos = " insert into usuarios (password, email, ci, nombre, apellido, tipoUsuario) values(md5(@password), @email, @ci, @name, @surname, @userType);"
+            cadenaComandos = " insert into usuarios   (password, email, ci, nombre, apellido, tipoUsuario) values(md5(@password), @email, @ci, @name, @surname, @userType);"
             cmd.CommandText = cadenaComandos
 
             cmd.Parameters.Add("@email", NpgsqlTypes.NpgsqlDbType.Varchar, 50).Value = usuarito.Email
@@ -49,13 +53,20 @@ Public Class PersistenciaUsuario
             cmd.Parameters.Add("@surname", NpgsqlTypes.NpgsqlDbType.Varchar, 30).Value = usuarito.Apellido
             cmd.Parameters.Add("@userType", NpgsqlTypes.NpgsqlDbType.Varchar, 10).Value = "Cliente"
 
-            cmd.ExecuteReader()
+            Dim resultado As Integer
+            resultado = cmd.ExecuteNonQuery
+            If resultado >= 1 Then
+                Return True
+            Else
+                Return False
+            End If
+            'cmd.ExecuteReader()
         Catch ex As Exception
             Throw ex
         Finally
             conexion.Close()
         End Try
-    End Sub
+    End Function
 
     Public Function bajaUsuario(ci As Integer) As Boolean
         Try

@@ -36,7 +36,21 @@
                 usuarioNueva.Apellido = apellidoUsuario
                 usuarioNueva.Passwd = contrasenia
 
-                logica.altaUsuario(usuarioNueva)
+                'logica.altaUsuario(usuarioNueva)
+                Dim res = logica.altaUsuario(usuarito As ClaseUsuario)
+
+                If res Then
+                    MsgBox("Eliminado")
+                    tbxCi.Clear()
+                End If
+                MsgBox("Se dio de alta el usuario con la cedula " + ciUsuario)
+
+
+                tbxCorreo.Text = ""
+                tbxCi.Text = ""
+                tbxNombre.Text = ""
+                tbxApellido.Text = ""
+                tbxContrasenia.Text = ""
 
             Else
                 'Por si cualquier casillero esta vacio
@@ -51,11 +65,7 @@
     End Sub
 
     Private Sub altaUsuarioForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim ButtonPath As Drawing2D.GraphicsPath = New Drawing2D.GraphicsPath()
-        Dim myRectangle As Rectangle = btnAceptar.ClientRectangle
-        myRectangle.Inflate(-5, 10)
-        ButtonPath.AddEllipse(myRectangle)
-        btnAceptar.Region = New Region(ButtonPath)
+        tbxContrasenia.PasswordChar = "*"
     End Sub
     'End Sub
     'Me.tbxNombre Border.CornerRadius
