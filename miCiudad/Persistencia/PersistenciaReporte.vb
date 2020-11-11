@@ -1,7 +1,4 @@
 ﻿Imports Npgsql
-
-
-
 Public Class PersistenciaReporte
 
     Dim conexion As Npgsql.NpgsqlConnection
@@ -28,7 +25,8 @@ Public Class PersistenciaReporte
         End Try
     End Sub
 
-
+    'SIN TERMINAR BUSCAR REPORTE
+    'cambiar persona por reporte
     Public Function bucarPersona(cedula As Integer) As claseReporte
         Dim newReporte As New claseReporte()
         Try
@@ -41,6 +39,7 @@ Public Class PersistenciaReporte
             cadenaComandos = "SELECT * FROM reportes WHERE id = @id;"
             cmd.CommandText = cadenaComandos
 
+            'Cambiar cedula por id
             cmd.Parameters.Add("@id", NpgsqlTypes.NpgsqlDbType.Integer).Value = cedula
 
             Dim lector As NpgsqlDataReader

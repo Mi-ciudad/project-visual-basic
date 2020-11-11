@@ -15,11 +15,6 @@
             Dim apellidoUsuario As String
             apellidoUsuario = tbxApellido.Text
 
-<<<<<<< Updated upstream
-
-
-=======
->>>>>>> Stashed changes
             Dim contrasenia As String
             contrasenia = tbxContrasenia.Text
 

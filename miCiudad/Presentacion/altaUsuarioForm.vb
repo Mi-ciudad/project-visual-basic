@@ -30,7 +30,6 @@
             Dim logica As New LogicaUsuario()
 
             If emailUsuario <> "" And ciUsuario.ToString <> "" And apellidoUsuario <> "" And nombreUsuario <> "" And contrasenia <> "" Then
-                usuarioNueva.NombreUsuario = nombreUsuario
                 usuarioNueva.Email = emailUsuario
                 usuarioNueva.Ci = ciUsuario
                 usuarioNueva.Nombre = nombreUsuario
@@ -44,8 +43,6 @@
                 If emailUsuario = "" Or ciUsuario.ToString = "" Or nombreUsuario = "" Or apellidoUsuario = "" Or contrasenia = "" Then
                     MsgBox("No puedes dejar ninguna casilla vacia")
                 End If
-
-
             End If
 
         Catch ex As Exception
@@ -60,8 +57,6 @@
         ButtonPath.AddEllipse(myRectangle)
         btnAceptar.Region = New Region(ButtonPath)
     End Sub
-
-
     'End Sub
     'Me.tbxNombre Border.CornerRadius
 End Class
