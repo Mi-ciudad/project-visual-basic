@@ -6,7 +6,6 @@
         tbxNombre.Text = ""
         tbxApellido.Text = ""
         tbxContrasenia.Text = ""
-        tbxNombreUsuario.Text = ""
     End Sub
 
     Private Sub btnAceptar_Click_1(sender As Object, e As EventArgs) Handles btnAceptar.Click
@@ -27,13 +26,10 @@
             Dim contrasenia As String
             contrasenia = tbxContrasenia.Text
 
-            Dim nombreUsuarioUsuario As String
-            nombreUsuarioUsuario = tbxNombreUsuario.Text
-
             Dim usuarioNueva = New ClaseUsuario()
             Dim logica As New LogicaUsuario()
 
-            If emailUsuario <> "" And nombreUsuarioUsuario <> "" And ciUsuario.ToString <> "" And apellidoUsuario <> "" And nombreUsuario <> "" And contrasenia <> "" Then
+            If emailUsuario <> "" And ciUsuario.ToString <> "" And apellidoUsuario <> "" And nombreUsuario <> "" And contrasenia <> "" Then
                 usuarioNueva.NombreUsuario = nombreUsuario
                 usuarioNueva.Email = emailUsuario
                 usuarioNueva.Ci = ciUsuario
@@ -45,7 +41,7 @@
 
             Else
                 'Por si cualquier casillero esta vacio
-                If emailUsuario = "" Or nombreUsuarioUsuario = "" Or ciUsuario.ToString = "" Or nombreUsuario = "" Or apellidoUsuario = "" Or contrasenia = "" Then
+                If emailUsuario = "" Or ciUsuario.ToString = "" Or nombreUsuario = "" Or apellidoUsuario = "" Or contrasenia = "" Then
                     MsgBox("No puedes dejar ninguna casilla vacia")
                 End If
 

@@ -29,7 +29,7 @@ Partial Class buscarReporte
         Me.pbxVectorAltaUsuario = New System.Windows.Forms.PictureBox()
         Me.pbxLinea = New System.Windows.Forms.PictureBox()
         Me.pbxRectangulo = New System.Windows.Forms.PictureBox()
-        Me.tbxNombre = New System.Windows.Forms.TextBox()
+        Me.tbxId = New System.Windows.Forms.TextBox()
         CType(Me.pbxVectorAltaUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxLinea, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxRectangulo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -42,7 +42,7 @@ Partial Class buscarReporte
         Me.btnAceptar.FlatAppearance.BorderSize = 0
         Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAceptar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.btnAceptar.Location = New System.Drawing.Point(510, 505)
+        Me.btnAceptar.Location = New System.Drawing.Point(560, 507)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(97, 36)
         Me.btnAceptar.TabIndex = 71
@@ -98,15 +98,15 @@ Partial Class buscarReporte
         Me.pbxRectangulo.TabIndex = 57
         Me.pbxRectangulo.TabStop = False
         '
-        'tbxNombre
+        'tbxId
         '
-        Me.tbxNombre.Font = New System.Drawing.Font("Microsoft Tai Le", 12.5!)
-        Me.tbxNombre.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.tbxNombre.Location = New System.Drawing.Point(94, 211)
-        Me.tbxNombre.Multiline = True
-        Me.tbxNombre.Name = "tbxNombre"
-        Me.tbxNombre.Size = New System.Drawing.Size(314, 35)
-        Me.tbxNombre.TabIndex = 56
+        Me.tbxId.Font = New System.Drawing.Font("Microsoft Tai Le", 12.5!)
+        Me.tbxId.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.tbxId.Location = New System.Drawing.Point(94, 211)
+        Me.tbxId.Multiline = True
+        Me.tbxId.Name = "tbxId"
+        Me.tbxId.Size = New System.Drawing.Size(314, 35)
+        Me.tbxId.TabIndex = 56
         '
         'buscarReporte
         '
@@ -119,7 +119,7 @@ Partial Class buscarReporte
         Me.Controls.Add(Me.pbxVectorAltaUsuario)
         Me.Controls.Add(Me.pbxLinea)
         Me.Controls.Add(Me.pbxRectangulo)
-        Me.Controls.Add(Me.tbxNombre)
+        Me.Controls.Add(Me.tbxId)
         Me.Name = "buscarReporte"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " "
@@ -137,5 +137,5 @@ Partial Class buscarReporte
     Friend WithEvents pbxVectorAltaUsuario As PictureBox
     Friend WithEvents pbxLinea As PictureBox
     Friend WithEvents pbxRectangulo As PictureBox
-    Private WithEvents tbxNombre As TextBox
+    Private WithEvents tbxId As TextBox
 End Class

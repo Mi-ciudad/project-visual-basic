@@ -30,7 +30,6 @@ Public Class PersistenciaUsuario
         End Try
     End Sub
 
-
     Public Sub altaUsuario(usuarito As ClaseUsuario)
         Try
 

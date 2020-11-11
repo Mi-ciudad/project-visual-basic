@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class formAltaUsuario
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class formAltaUsuario
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formAltaUsuario))
         Me.tbxNombre = New System.Windows.Forms.TextBox()
@@ -39,8 +39,6 @@ Partial Class formAltaUsuario
         Me.pbxVectorAltaUsuario = New System.Windows.Forms.PictureBox()
         Me.pbxLinea = New System.Windows.Forms.PictureBox()
         Me.pbxRectangulo = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.tbxNombreUsuario = New System.Windows.Forms.TextBox()
         CType(Me.pbxVectorAltaUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxLinea, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxRectangulo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -213,26 +211,6 @@ Partial Class formAltaUsuario
         Me.pbxRectangulo.TabIndex = 33
         Me.pbxRectangulo.TabStop = False
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label1.Location = New System.Drawing.Point(629, 367)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(151, 20)
-        Me.Label1.TabIndex = 55
-        Me.Label1.Text = "Nombre de usuario"
-        '
-        'tbxNombreUsuario
-        '
-        Me.tbxNombreUsuario.Font = New System.Drawing.Font("Microsoft Tai Le", 12.5!)
-        Me.tbxNombreUsuario.Location = New System.Drawing.Point(633, 399)
-        Me.tbxNombreUsuario.Multiline = True
-        Me.tbxNombreUsuario.Name = "tbxNombreUsuario"
-        Me.tbxNombreUsuario.Size = New System.Drawing.Size(196, 35)
-        Me.tbxNombreUsuario.TabIndex = 54
-        '
         'formAltaUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -240,8 +218,6 @@ Partial Class formAltaUsuario
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(1104, 611)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.tbxNombreUsuario)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.lblCi)
@@ -286,6 +262,4 @@ Partial Class formAltaUsuario
     Private WithEvents tbxCi As TextBox
     Friend WithEvents btnBorrar As Button
     Friend WithEvents btnAceptar As Button
-    Friend WithEvents Label1 As Label
-    Private WithEvents tbxNombreUsuario As TextBox
 End Class

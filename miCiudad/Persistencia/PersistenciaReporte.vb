@@ -28,6 +28,38 @@ Public Class PersistenciaReporte
         End Try
     End Sub
 
+
+    Public Function bucarPersona(cedula As Integer) As claseReporte
+        Dim newReporte As New claseReporte()
+        Try
+            Dim classcnn = New Conexion
+            conexion = classcnn.abrirConexion
+
+            Dim cmd = New Npgsql.NpgsqlCommand
+            cmd.Connection = conexion
+            Dim cadenaComandos As String
+            cadenaComandos = "SELECT * FROM reportes WHERE id = @id;"
+            cmd.CommandText = cadenaComandos
+
+            cmd.Parameters.Add("@id", NpgsqlTypes.NpgsqlDbType.Integer).Value = cedula
+
+            Dim lector As NpgsqlDataReader
+            lector = cmd.ExecuteReader()
+
+            If lector.HasRows Then
+                lector.Read()
+                newReporte.Ci = Convert.ToInt32(lector(0).ToString)
+                newReporte.Descripcion = lector(1).ToString
+                newReporte.Direccion = lector(2).ToString
+            End If
+        Catch ex As Exception
+            Throw ex
+        Finally
+            conexion.Close()
+
+        End Try
+        Return newReporte
+    End Function
     '    Public Sub altaReporte(reportesito As claseReporte)
     '        Try
     '            Dim classcnn = New Conexion

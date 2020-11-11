@@ -15,9 +15,11 @@
             Dim apellidoUsuario As String
             apellidoUsuario = tbxApellido.Text
 
-            Dim userName As String
-            userName = tbxNombreUsuario.Text
+<<<<<<< Updated upstream
 
+
+=======
+>>>>>>> Stashed changes
             Dim contrasenia As String
             contrasenia = tbxContrasenia.Text
 
@@ -33,5 +35,14 @@
         Catch ex As Exception
             MsgBox("un error: " + ex.Message)
         End Try
+    End Sub
+
+    Private Sub modificarUsuarioForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim ButtonPath As Drawing2D.GraphicsPath = New Drawing2D.GraphicsPath()
+        Dim myRectangle As Rectangle = btnAceptar.ClientRectangle
+        myRectangle.Inflate(-5, 10)
+        ButtonPath.AddEllipse(myRectangle)
+        btnAceptar.Region = New Region(ButtonPath)
+        btnBorrar.Region = New Region(ButtonPath)
     End Sub
 End Class

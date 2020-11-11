@@ -23,8 +23,6 @@ Partial Class modificarUserForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(modificarUserForm))
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.tbxNombreUsuario = New System.Windows.Forms.TextBox()
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.btnBorrar = New System.Windows.Forms.Button()
         Me.lblCi = New System.Windows.Forms.Label()
@@ -45,26 +43,6 @@ Partial Class modificarUserForm
         CType(Me.pbxRectangulo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxVectorAltaUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Label1.Location = New System.Drawing.Point(629, 367)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(151, 20)
-        Me.Label1.TabIndex = 91
-        Me.Label1.Text = "Nombre de usuario"
-        '
-        'tbxNombreUsuario
-        '
-        Me.tbxNombreUsuario.Font = New System.Drawing.Font("Microsoft Tai Le", 12.5!)
-        Me.tbxNombreUsuario.Location = New System.Drawing.Point(633, 399)
-        Me.tbxNombreUsuario.Multiline = True
-        Me.tbxNombreUsuario.Name = "tbxNombreUsuario"
-        Me.tbxNombreUsuario.Size = New System.Drawing.Size(196, 35)
-        Me.tbxNombreUsuario.TabIndex = 90
         '
         'btnAceptar
         '
@@ -192,9 +170,9 @@ Partial Class modificarUserForm
         Me.lblTitulo.ForeColor = System.Drawing.SystemColors.ControlDarkDark
         Me.lblTitulo.Location = New System.Drawing.Point(123, 85)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(127, 26)
+        Me.lblTitulo.Size = New System.Drawing.Size(177, 26)
         Me.lblTitulo.TabIndex = 78
-        Me.lblTitulo.Text = "Alta usuario"
+        Me.lblTitulo.Text = "Modificar usuario"
         '
         'pbxLinea
         '
@@ -238,8 +216,6 @@ Partial Class modificarUserForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1104, 611)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.tbxNombreUsuario)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.lblCi)
@@ -267,9 +243,6 @@ Partial Class modificarUserForm
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label1 As Label
-    Private WithEvents tbxNombreUsuario As TextBox
     Friend WithEvents btnAceptar As Button
     Friend WithEvents btnBorrar As Button
     Friend WithEvents lblCi As Label

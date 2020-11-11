@@ -6,7 +6,7 @@
     Private _nombre As String
     Private _apellido As String
     Private _tipo As String
-    Private _nombreUsuario As String
+
 
     Public Property Email As String
         Get
@@ -14,15 +14,6 @@
         End Get
         Set(value As String)
             _email = value
-        End Set
-    End Property
-
-    Public Property NombreUsuario As String
-        Get
-            Return _nombreUsuario
-        End Get
-        Set(value As String)
-            _nombreUsuario = value
         End Set
     End Property
 
@@ -75,8 +66,7 @@
 
     End Sub
 
-    Public Sub ClaseUsuario(email_ As String, nombreUsuario_ As String, passwd_ As String, ci_ As Integer, nombre_ As String, apellido_ As String, tipoUsuario_ As String)
-        NombreUsuario = nombreUsuario_
+    Public Sub ClaseUsuario(email_ As String, passwd_ As String, ci_ As Integer, nombre_ As String, apellido_ As String, tipoUsuario_ As String)
         Email = email_
         Passwd = passwd_
         Ci = ci_

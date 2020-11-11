@@ -24,7 +24,6 @@ Partial Class modificarEstadoReporteForm
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(modificarEstadoReporteForm))
         Me.cbxEstado = New System.Windows.Forms.ComboBox()
-        Me.btnAceptar = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.lblNombre = New System.Windows.Forms.Label()
         Me.lblTitulo = New System.Windows.Forms.Label()
@@ -32,6 +31,8 @@ Partial Class modificarEstadoReporteForm
         Me.pbxLinea = New System.Windows.Forms.PictureBox()
         Me.pbxRectangulo = New System.Windows.Forms.PictureBox()
         Me.tbxId = New System.Windows.Forms.TextBox()
+        Me.btnAceptar = New System.Windows.Forms.Button()
+        Me.btnBorrar = New System.Windows.Forms.Button()
         CType(Me.pbxVectorAltaUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxLinea, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxRectangulo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -46,20 +47,6 @@ Partial Class modificarEstadoReporteForm
         Me.cbxEstado.Name = "cbxEstado"
         Me.cbxEstado.Size = New System.Drawing.Size(196, 30)
         Me.cbxEstado.TabIndex = 82
-        '
-        'btnAceptar
-        '
-        Me.btnAceptar.AutoSize = True
-        Me.btnAceptar.BackColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(251, Byte), Integer))
-        Me.btnAceptar.FlatAppearance.BorderSize = 0
-        Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAceptar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.btnAceptar.Location = New System.Drawing.Point(633, 507)
-        Me.btnAceptar.Name = "btnAceptar"
-        Me.btnAceptar.Size = New System.Drawing.Size(97, 36)
-        Me.btnAceptar.TabIndex = 81
-        Me.btnAceptar.Text = "Aceptar"
-        Me.btnAceptar.UseVisualStyleBackColor = False
         '
         'Label5
         '
@@ -131,13 +118,42 @@ Partial Class modificarEstadoReporteForm
         Me.tbxId.Size = New System.Drawing.Size(196, 35)
         Me.tbxId.TabIndex = 73
         '
+        'btnAceptar
+        '
+        Me.btnAceptar.AutoSize = True
+        Me.btnAceptar.BackColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(251, Byte), Integer))
+        Me.btnAceptar.FlatAppearance.BorderSize = 0
+        Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAceptar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
+        Me.btnAceptar.Location = New System.Drawing.Point(635, 493)
+        Me.btnAceptar.Name = "btnAceptar"
+        Me.btnAceptar.Size = New System.Drawing.Size(97, 36)
+        Me.btnAceptar.TabIndex = 84
+        Me.btnAceptar.Text = "Aceptar"
+        Me.btnAceptar.UseVisualStyleBackColor = False
+        '
+        'btnBorrar
+        '
+        Me.btnBorrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.btnBorrar.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnBorrar.FlatAppearance.BorderSize = 0
+        Me.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
+        Me.btnBorrar.Location = New System.Drawing.Point(392, 493)
+        Me.btnBorrar.Name = "btnBorrar"
+        Me.btnBorrar.Size = New System.Drawing.Size(97, 36)
+        Me.btnBorrar.TabIndex = 83
+        Me.btnBorrar.Text = "Vaciar"
+        Me.btnBorrar.UseVisualStyleBackColor = False
+        '
         'modificarEstadoReporteForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1104, 611)
-        Me.Controls.Add(Me.cbxEstado)
         Me.Controls.Add(Me.btnAceptar)
+        Me.Controls.Add(Me.btnBorrar)
+        Me.Controls.Add(Me.cbxEstado)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.lblNombre)
         Me.Controls.Add(Me.lblTitulo)
@@ -157,7 +173,6 @@ Partial Class modificarEstadoReporteForm
     End Sub
 
     Protected WithEvents cbxEstado As ComboBox
-    Friend WithEvents btnAceptar As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents lblNombre As Label
     Friend WithEvents lblTitulo As Label
@@ -165,4 +180,6 @@ Partial Class modificarEstadoReporteForm
     Friend WithEvents pbxLinea As PictureBox
     Friend WithEvents pbxRectangulo As PictureBox
     Private WithEvents tbxId As TextBox
+    Friend WithEvents btnAceptar As Button
+    Friend WithEvents btnBorrar As Button
 End Class

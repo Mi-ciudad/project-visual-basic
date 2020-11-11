@@ -1,13 +1,19 @@
 ﻿Public Class buscarReporte
-    Private Sub buscarReporte_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
+        Try
+            Dim idReporte As Integer
+            idReporte = tbxId.Text
 
-    End Sub
+            Dim personaNueva = New claseReporte()
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs)
+            Dim logica As New LogicaReporte()
+            personaNueva = logica.bucarReporte(idReporte)
 
-    End Sub
+            'Mostrar.Text = personaNueva.Ci.ToString + " - " + personaNueva.Nombre + " - " + personaNueva.Direccion
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
 
+        Catch ex As Exception
+            MsgBox("un error: " + ex.Message)
+        End Try
     End Sub
 End Class
