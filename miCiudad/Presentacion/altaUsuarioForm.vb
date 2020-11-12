@@ -37,13 +37,13 @@
                 usuarioNueva.Passwd = contrasenia
 
                 'logica.altaUsuario(usuarioNueva)
-                Dim res = logica.altaUsuario(usuarito As ClaseUsuario)
+                'Dim res = logica.altaUsuario(usuarito As ClaseUsuario)
 
-                If res Then
-                    MsgBox("Eliminado")
-                    tbxCi.Clear()
-                End If
-                MsgBox("Se dio de alta el usuario con la cedula " + ciUsuario)
+                'If res Then
+                'MsgBox("Eliminado")
+                'tbxCi.Clear()
+                'End If
+                'MsgBox("Se dio de alta el usuario con la cedula " + ciUsuario)
 
 
                 tbxCorreo.Text = ""

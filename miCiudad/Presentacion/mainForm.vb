@@ -22,4 +22,8 @@
     Private Sub BuscarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuscarToolStripMenuItem.Click
         buscarReporte.ShowDialog()
     End Sub
+
+    Private Sub ListarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListarToolStripMenuItem.Click
+        listarReportesForm.ShowDialog()
+    End Sub
 End Class

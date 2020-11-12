@@ -33,11 +33,7 @@
     End Sub
 
     Private Sub modificarUsuarioForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim ButtonPath As Drawing2D.GraphicsPath = New Drawing2D.GraphicsPath()
-        Dim myRectangle As Rectangle = btnAceptar.ClientRectangle
-        myRectangle.Inflate(-5, 10)
-        ButtonPath.AddEllipse(myRectangle)
-        btnAceptar.Region = New Region(ButtonPath)
-        btnBorrar.Region = New Region(ButtonPath)
+        tbxContrasenia.PasswordChar = "*"
+
     End Sub
 End Class

@@ -6,11 +6,7 @@
     End Sub
 
     Private Sub bajaUsuarioForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim ButtonPath As Drawing2D.GraphicsPath = New Drawing2D.GraphicsPath()
-        Dim myRectangle As Rectangle = btnAceptar.ClientRectangle
-        myRectangle.Inflate(1, 20)
-        ButtonPath.AddEllipse(myRectangle)
-        btnAceptar.Region = New Region(ButtonPath)
+
     End Sub
 
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
@@ -29,4 +25,7 @@
         End If
     End Sub
 
+    Private Sub lblCi_Click(sender As Object, e As EventArgs) Handles lblCi.Click
+
+    End Sub
 End Class

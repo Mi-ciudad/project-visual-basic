@@ -807,3 +807,4 @@ C:\Users\Alumno\Desktop\miCiudad\project-visual-basic\miCiudad\obj\Debug\miCiuda
 C:\Users\Alumno\Desktop\miCiudad\project-visual-basic\miCiudad\obj\Debug\miCiudad.exe
 C:\Users\Alumno\Desktop\miCiudad\project-visual-basic\miCiudad\obj\Debug\miCiudad.xml
 C:\Users\Alumno\Desktop\miCiudad\project-visual-basic\miCiudad\obj\Debug\miCiudad.pdb
+C:\Users\Alumno\Desktop\miCiudad\project-visual-basic\miCiudad\obj\Debug\miCiudad.listarReportesForm.resources

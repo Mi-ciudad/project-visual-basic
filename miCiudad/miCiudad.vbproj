@@ -129,6 +129,12 @@
     <Compile Include="Presentacion\buscarReporte.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentacion\listarReportesForm.Designer.vb">
+      <DependentUpon>listarReportesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\listarReportesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentacion\modificarEstadoReporteForm.Designer.vb">
       <DependentUpon>modificarEstadoReporteForm.vb</DependentUpon>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\buscarReporte.resx">
       <DependentUpon>buscarReporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\listarReportesForm.resx">
+      <DependentUpon>listarReportesForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\modificarEstadoReporteForm.resx">
       <DependentUpon>modificarEstadoReporteForm.vb</DependentUpon>
