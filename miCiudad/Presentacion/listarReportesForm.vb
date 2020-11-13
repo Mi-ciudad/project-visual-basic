@@ -16,6 +16,7 @@
     End Sub
 
     Private Sub ListViewReportes_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListViewReportes.SelectedIndexChanged
-
+        ListViewReportes.BackColor = Color.FromArgb(183, 154, 179)
+        ListViewReportes.ForeColor = Color.White
     End Sub
 End Class

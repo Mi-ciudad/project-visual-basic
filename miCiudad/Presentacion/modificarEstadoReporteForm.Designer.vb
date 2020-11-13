@@ -32,7 +32,6 @@ Partial Class modificarEstadoReporteForm
         Me.pbxRectangulo = New System.Windows.Forms.PictureBox()
         Me.tbxId = New System.Windows.Forms.TextBox()
         Me.btnAceptar = New System.Windows.Forms.Button()
-        Me.btnBorrar = New System.Windows.Forms.Button()
         CType(Me.pbxVectorAltaUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxLinea, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxRectangulo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -42,7 +41,7 @@ Partial Class modificarEstadoReporteForm
         '
         Me.cbxEstado.Font = New System.Drawing.Font("Microsoft Tai Le", 12.5!)
         Me.cbxEstado.FormattingEnabled = True
-        Me.cbxEstado.Items.AddRange(New Object() {"En revision", "Rechazado", "Solucionado"})
+        Me.cbxEstado.Items.AddRange(New Object() {"En proceso", "Rechazado", "Solucionado"})
         Me.cbxEstado.Location = New System.Drawing.Point(633, 211)
         Me.cbxEstado.Name = "cbxEstado"
         Me.cbxEstado.Size = New System.Drawing.Size(196, 30)
@@ -132,27 +131,12 @@ Partial Class modificarEstadoReporteForm
         Me.btnAceptar.Text = "Aceptar"
         Me.btnAceptar.UseVisualStyleBackColor = False
         '
-        'btnBorrar
-        '
-        Me.btnBorrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.btnBorrar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnBorrar.FlatAppearance.BorderSize = 0
-        Me.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.btnBorrar.Location = New System.Drawing.Point(392, 493)
-        Me.btnBorrar.Name = "btnBorrar"
-        Me.btnBorrar.Size = New System.Drawing.Size(97, 36)
-        Me.btnBorrar.TabIndex = 83
-        Me.btnBorrar.Text = "Vaciar"
-        Me.btnBorrar.UseVisualStyleBackColor = False
-        '
         'modificarEstadoReporteForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1104, 611)
         Me.Controls.Add(Me.btnAceptar)
-        Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.cbxEstado)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.lblNombre)
@@ -181,5 +165,4 @@ Partial Class modificarEstadoReporteForm
     Friend WithEvents pbxRectangulo As PictureBox
     Private WithEvents tbxId As TextBox
     Friend WithEvents btnAceptar As Button
-    Friend WithEvents btnBorrar As Button
 End Class

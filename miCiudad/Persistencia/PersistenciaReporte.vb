@@ -49,11 +49,10 @@ Public Class PersistenciaReporte
             cadenaComandos = "UPDATE Reportes SET estado =@state WHERE id = @id;"
             cmd.CommandText = cadenaComandos
 
-            cmd.Parameters.Add("@id", NpgsqlTypes.NpgsqlDbType.Varchar, 100).Value = reportesito.Descripcion
-            cmd.Parameters.Add("@direction", NpgsqlTypes.NpgsqlDbType.Varchar, 50).Value = reportesito.Direccion
+            cmd.Parameters.Add("@id", NpgsqlTypes.NpgsqlDbType.Integer).Value = reportesito.Id
             cmd.Parameters.Add("@state", NpgsqlTypes.NpgsqlDbType.Varchar, 50).Value = reportesito.Estado
-            cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = reportesito.Ci
-            cmd.Parameters.Add("@image", NpgsqlTypes.NpgsqlDbType.Bytea).Value = reportesito.Imagen
+            Dim resultado As Integer
+            resultado = cmd.ExecuteNonQuery
 
         Catch ex As Exception
             Throw ex

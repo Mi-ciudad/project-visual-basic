@@ -51,7 +51,7 @@ Public Class PersistenciaUsuario
             cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = usuarito.Ci
             cmd.Parameters.Add("@name", NpgsqlTypes.NpgsqlDbType.Varchar, 30).Value = usuarito.Nombre
             cmd.Parameters.Add("@surname", NpgsqlTypes.NpgsqlDbType.Varchar, 30).Value = usuarito.Apellido
-            cmd.Parameters.Add("@userType", NpgsqlTypes.NpgsqlDbType.Varchar, 10).Value = "Cliente"
+            cmd.Parameters.Add("@userType", NpgsqlTypes.NpgsqlDbType.Varchar, 10).Value = "Usuario"
 
             Dim resultado As Integer
             resultado = cmd.ExecuteNonQuery
@@ -70,6 +70,9 @@ Public Class PersistenciaUsuario
 
     Public Function bajaUsuario(ci As Integer) As Boolean
         Try
+            Dim logica As New LogicaReporte
+            Dim res = logica.bajaReporte(ci)
+
             Dim classcnn = New Conexion
             conexion = classcnn.abrirConexion
 
@@ -79,10 +82,6 @@ Public Class PersistenciaUsuario
             Dim cadenaComandos As String
 
             Dim resultado As Integer
-
-            Dim logica As New LogicaReporte
-            Dim res = logica.bajaReporte(ci)
-
 
             cadenaComandos = "DELETE FROM usuarios WHERE ci = @ci ;"
             cmd.CommandText = cadenaComandos
