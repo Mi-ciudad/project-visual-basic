@@ -61,6 +61,7 @@
         tbxNombre.Text = ""
         tbxApellido.Text = ""
         tbxContrasenia.Text = ""
+
     End Sub
     'End Sub
     'Me.tbxNombre Border.CornerRadius

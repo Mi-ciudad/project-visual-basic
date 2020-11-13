@@ -208,7 +208,7 @@ Partial Class formAltaUsuario
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(97, 36)
         Me.btnBorrar.TabIndex = 54
-        Me.btnBorrar.Text = "Cancelar"
+        Me.btnBorrar.Text = "Vaciar"
         Me.btnBorrar.UseVisualStyleBackColor = False
         '
         'formAltaUsuario
