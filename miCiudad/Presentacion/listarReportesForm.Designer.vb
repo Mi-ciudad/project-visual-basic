@@ -78,12 +78,13 @@ Partial Class listarReportesForm
         '
         'ListViewReportes
         '
+        Me.ListViewReportes.BackColor = System.Drawing.SystemColors.InactiveBorder
         Me.ListViewReportes.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeaderId, Me.ColumnHeaderDireccion, Me.ColumnHeaderDescripcion, Me.ColumnHeaderEstado, Me.ColumnHeaderCi})
         Me.ListViewReportes.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
         Me.ListViewReportes.HideSelection = False
         Me.ListViewReportes.Location = New System.Drawing.Point(60, 172)
         Me.ListViewReportes.Name = "ListViewReportes"
-        Me.ListViewReportes.Size = New System.Drawing.Size(1000, 97)
+        Me.ListViewReportes.Size = New System.Drawing.Size(1000, 401)
         Me.ListViewReportes.TabIndex = 79
         Me.ListViewReportes.UseCompatibleStateImageBehavior = False
         Me.ListViewReportes.View = System.Windows.Forms.View.Details
@@ -123,6 +124,7 @@ Partial Class listarReportesForm
         Me.Controls.Add(Me.pbxVectorAltaUsuario)
         Me.Controls.Add(Me.pbxLinea)
         Me.Controls.Add(Me.pbxRectangulo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "listarReportesForm"
         Me.Text = "listarReportesForm"
         CType(Me.pbxVectorAltaUsuario, System.ComponentModel.ISupportInitialize).EndInit()

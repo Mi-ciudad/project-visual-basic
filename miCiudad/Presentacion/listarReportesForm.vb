@@ -14,4 +14,8 @@
         Next
 
     End Sub
+
+    Private Sub ListViewReportes_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListViewReportes.SelectedIndexChanged
+
+    End Sub
 End Class

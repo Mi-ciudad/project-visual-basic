@@ -12,14 +12,15 @@
     End Sub
 
     Private Sub mainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Menu.BackColor = Color.FromArgb(183, 154, 179)
+        Menu.ForeColor = Color.White
     End Sub
 
     Private Sub BajaUsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BajaUsuarioToolStripMenuItem.Click
         bajaUsuarioForm.ShowDialog()
     End Sub
 
-    Private Sub BuscarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BuscarToolStripMenuItem.Click
+    Private Sub BuscarToolStripMenuItem_Click(sender As Object, e As EventArgs)
         buscarReporte.ShowDialog()
     End Sub
 

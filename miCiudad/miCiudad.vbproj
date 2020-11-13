@@ -216,8 +216,11 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Imagenes\Line 1.png" />
+    <Content Include="Imagenes\Mi Ciudad %282%29.png" />
+    <Content Include="Imagenes\mock-phone-rea 1 %282%29 %281%29.png" />
     <Content Include="Imagenes\Rectangle 1.png" />
     <Content Include="Imagenes\Rectangle 3.png" />
+    <Content Include="Imagenes\Rectangle 4 %281%29.png" />
     <Content Include="Imagenes\Vector.png" />
     <Content Include="Imagenes\VectorModificarUsuario.png" />
   </ItemGroup>
