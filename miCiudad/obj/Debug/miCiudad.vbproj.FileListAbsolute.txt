@@ -931,7 +931,6 @@ C:\Users\Lucía\Desktop\miCiudad\project-visual-basic\miCiudad\bin\Debug\System.
 C:\Users\Lucía\Desktop\miCiudad\project-visual-basic\miCiudad\obj\Debug\miCiudad.vbprojAssemblyReference.cache
 C:\Users\Lucía\Desktop\miCiudad\project-visual-basic\miCiudad\obj\Debug\miCiudad.exe.config
 C:\Users\Lucía\Desktop\miCiudad\project-visual-basic\miCiudad\obj\Debug\miCiudad.bajaUsuarioForm.resources
-C:\Users\Lucía\Desktop\miCiudad\project-visual-basic\miCiudad\obj\Debug\miCiudad.buscarReporte.resources
 C:\Users\Lucía\Desktop\miCiudad\project-visual-basic\miCiudad\obj\Debug\miCiudad.listarReportesForm.resources
 C:\Users\Lucía\Desktop\miCiudad\project-visual-basic\miCiudad\obj\Debug\miCiudad.modificarEstadoReporteForm.resources
 C:\Users\Lucía\Desktop\miCiudad\project-visual-basic\miCiudad\obj\Debug\miCiudad.modificarUserForm.resources

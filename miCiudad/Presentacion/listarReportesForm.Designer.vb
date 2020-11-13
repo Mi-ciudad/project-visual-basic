@@ -126,7 +126,6 @@ Partial Class listarReportesForm
         Me.Controls.Add(Me.pbxRectangulo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "listarReportesForm"
-        Me.Text = "listarReportesForm"
         CType(Me.pbxVectorAltaUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxLinea, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxRectangulo, System.ComponentModel.ISupportInitialize).EndInit()

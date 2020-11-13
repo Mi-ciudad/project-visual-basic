@@ -96,4 +96,36 @@ Public Class PersistenciaReporte
         Return listaReportesito
     End Function
 
+    Public Function bajaReporte(ci As Integer) As Boolean
+        Try
+            Dim classcnn = New Conexion
+            conexion = classcnn.abrirConexion
+
+            Dim cmd = New Npgsql.NpgsqlCommand
+
+
+            cmd.Connection = conexion
+            Dim cadenaComandos As String
+
+            Dim resultado As Integer
+
+            cadenaComandos = "DELETE FROM reportes WHERE ci = @ci ;"
+            cmd.CommandText = cadenaComandos
+
+            cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = ci
+            resultado = cmd.ExecuteNonQuery
+
+            If resultado >= 1 Then
+                Return True
+            Else
+                Return False
+            End If
+
+        Catch ex As Exception
+            Throw ex
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
 End Class

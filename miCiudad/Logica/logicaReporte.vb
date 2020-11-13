@@ -15,4 +15,9 @@
     Public Function listarReporte()
         Return persistencia.listarReporte()
     End Function
+
+    Public Function bajaReporte(ci As Integer) As Boolean
+        persistencia.bajaReporte(ci)
+    End Function
+
 End Class

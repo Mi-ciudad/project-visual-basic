@@ -75,14 +75,13 @@ Public Class PersistenciaUsuario
 
             Dim cmd = New Npgsql.NpgsqlCommand
 
-
             cmd.Connection = conexion
             Dim cadenaComandos As String
 
             Dim resultado As Integer
-            Dim resultadoUno As Integer
 
-            PersistenciaReporte.bajaReporte
+            Dim logica As New LogicaReporte
+            Dim res = logica.bajaReporte(ci)
 
 
             cadenaComandos = "DELETE FROM usuarios WHERE ci = @ci ;"
@@ -91,7 +90,7 @@ Public Class PersistenciaUsuario
             cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = ci
             resultado = cmd.ExecuteNonQuery
 
-            If resultado And resultadoUno >= 1 Then
+            If resultado >= 1 Then
                 Return True
             Else
                 Return False

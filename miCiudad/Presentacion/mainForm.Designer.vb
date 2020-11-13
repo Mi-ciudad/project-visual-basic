@@ -61,19 +61,19 @@ Partial Class mainForm
         'AltaUserMenuItem
         '
         Me.AltaUserMenuItem.Name = "AltaUserMenuItem"
-        Me.AltaUserMenuItem.Size = New System.Drawing.Size(180, 24)
+        Me.AltaUserMenuItem.Size = New System.Drawing.Size(147, 24)
         Me.AltaUserMenuItem.Text = "Alta "
         '
         'BajaUsuarioToolStripMenuItem
         '
         Me.BajaUsuarioToolStripMenuItem.Name = "BajaUsuarioToolStripMenuItem"
-        Me.BajaUsuarioToolStripMenuItem.Size = New System.Drawing.Size(180, 24)
+        Me.BajaUsuarioToolStripMenuItem.Size = New System.Drawing.Size(147, 24)
         Me.BajaUsuarioToolStripMenuItem.Text = "Baja"
         '
         'ModificarUsuarioToolStripMenuItem
         '
         Me.ModificarUsuarioToolStripMenuItem.Name = "ModificarUsuarioToolStripMenuItem"
-        Me.ModificarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(180, 24)
+        Me.ModificarUsuarioToolStripMenuItem.Size = New System.Drawing.Size(147, 24)
         Me.ModificarUsuarioToolStripMenuItem.Text = "Modificar"
         '
         'ReportesToolStripMenuItem
@@ -150,7 +150,6 @@ Partial Class mainForm
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "mainForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Mi ciudad"
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()
         CType(Me.pbxVectorAltaUsuario, System.ComponentModel.ISupportInitialize).EndInit()

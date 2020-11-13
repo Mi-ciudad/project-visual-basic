@@ -123,12 +123,6 @@
     <Compile Include="Presentacion\bajaUsuarioForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\buscarReporte.Designer.vb">
-      <DependentUpon>buscarReporte.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Presentacion\buscarReporte.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Presentacion\listarReportesForm.Designer.vb">
       <DependentUpon>listarReportesForm.vb</DependentUpon>
     </Compile>
@@ -174,9 +168,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Presentacion\bajaUsuarioForm.resx">
       <DependentUpon>bajaUsuarioForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\buscarReporte.resx">
-      <DependentUpon>buscarReporte.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\listarReportesForm.resx">
       <DependentUpon>listarReportesForm.vb</DependentUpon>
