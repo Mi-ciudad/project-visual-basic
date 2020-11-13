@@ -38,7 +38,7 @@ Partial Class bajaUsuarioForm
         'btnAceptar
         '
         Me.btnAceptar.AutoSize = True
-        Me.btnAceptar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.btnAceptar.BackColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(251, Byte), Integer))
         Me.btnAceptar.FlatAppearance.BorderSize = 0
         Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAceptar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
@@ -109,8 +109,7 @@ Partial Class bajaUsuarioForm
         '
         'bajaUsuarioForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.ClientSize = New System.Drawing.Size(1104, 611)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.lblCi)
@@ -119,9 +118,11 @@ Partial Class bajaUsuarioForm
         Me.Controls.Add(Me.pbxVectorAltaUsuario)
         Me.Controls.Add(Me.pbxLinea)
         Me.Controls.Add(Me.pbxRectangulo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "bajaUsuarioForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Baja usuario"
+        Me.TopMost = True
         CType(Me.pbxVectorAltaUsuario, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxLinea, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pbxRectangulo, System.ComponentModel.ISupportInitialize).EndInit()

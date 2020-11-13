@@ -23,7 +23,6 @@ Partial Class listarReportesForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(listarReportesForm))
-        Me.btnAceptar = New System.Windows.Forms.Button()
         Me.lblTitulo = New System.Windows.Forms.Label()
         Me.pbxVectorAltaUsuario = New System.Windows.Forms.PictureBox()
         Me.pbxLinea = New System.Windows.Forms.PictureBox()
@@ -38,20 +37,6 @@ Partial Class listarReportesForm
         CType(Me.pbxLinea, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxRectangulo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'btnAceptar
-        '
-        Me.btnAceptar.AutoSize = True
-        Me.btnAceptar.BackColor = System.Drawing.Color.FromArgb(CType(CType(144, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(251, Byte), Integer))
-        Me.btnAceptar.FlatAppearance.BorderSize = 0
-        Me.btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAceptar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.btnAceptar.Location = New System.Drawing.Point(560, 507)
-        Me.btnAceptar.Name = "btnAceptar"
-        Me.btnAceptar.Size = New System.Drawing.Size(97, 36)
-        Me.btnAceptar.TabIndex = 78
-        Me.btnAceptar.Text = "Listar"
-        Me.btnAceptar.UseVisualStyleBackColor = False
         '
         'lblTitulo
         '
@@ -111,22 +96,22 @@ Partial Class listarReportesForm
         'ColumnHeaderDireccion
         '
         Me.ColumnHeaderDireccion.Text = "Dirección"
-        Me.ColumnHeaderDireccion.Width = 118
+        Me.ColumnHeaderDireccion.Width = 222
         '
         'ColumnHeaderDescripcion
         '
         Me.ColumnHeaderDescripcion.Text = "Descripción"
-        Me.ColumnHeaderDescripcion.Width = 290
+        Me.ColumnHeaderDescripcion.Width = 445
         '
         'ColumnHeaderEstado
         '
         Me.ColumnHeaderEstado.Text = "Estado"
-        Me.ColumnHeaderEstado.Width = 107
+        Me.ColumnHeaderEstado.Width = 133
         '
         'ColumnHeaderCi
         '
         Me.ColumnHeaderCi.Text = "Ci"
-        Me.ColumnHeaderCi.Width = 104
+        Me.ColumnHeaderCi.Width = 131
         '
         'listarReportesForm
         '
@@ -134,7 +119,6 @@ Partial Class listarReportesForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1104, 611)
         Me.Controls.Add(Me.ListViewReportes)
-        Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.lblTitulo)
         Me.Controls.Add(Me.pbxVectorAltaUsuario)
         Me.Controls.Add(Me.pbxLinea)
@@ -148,8 +132,6 @@ Partial Class listarReportesForm
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents btnAceptar As Button
     Friend WithEvents lblTitulo As Label
     Friend WithEvents pbxVectorAltaUsuario As PictureBox
     Friend WithEvents pbxLinea As PictureBox

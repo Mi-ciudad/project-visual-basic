@@ -5,8 +5,8 @@
         Try
             conexion = New Npgsql.NpgsqlConnection
             Dim cadenaConexion As String
-            'cadenaConexion = "Server=127.0.0.1;Port=5432;User Id='postgres';Password='root';Database =miCiudad"
-            cadenaConexion = "Server=10.1.14.80;Port=5432;User Id='postgres';Password='password';Database =miCiudad"
+            cadenaConexion = "Server=127.0.0.1;Port=5432;User Id='postgres';Password='root';Database =miCiudad"
+            'cadenaConexion = "Server=10.1.14.80;Port=5432;User Id='postgres';Password='password';Database =miCiudad"
             conexion.ConnectionString = cadenaConexion
             conexion.Open()
 

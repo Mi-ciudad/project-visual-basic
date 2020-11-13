@@ -232,6 +232,7 @@ Partial Class modificarUserForm
         Me.Controls.Add(Me.pbxRectangulo)
         Me.Controls.Add(Me.tbxNombre)
         Me.Controls.Add(Me.pbxVectorAltaUsuario)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "modificarUserForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

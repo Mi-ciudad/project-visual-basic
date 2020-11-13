@@ -1,14 +1,6 @@
 ﻿Public Class bajaUsuarioForm
     Dim logica As New LogicaUsuario
 
-    Private Sub EliminarUsuario(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub bajaUsuarioForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
         Dim ci = Convert.ToInt32(tbxCi.Text)
 
@@ -23,9 +15,5 @@
             End If
 
         End If
-    End Sub
-
-    Private Sub lblCi_Click(sender As Object, e As EventArgs) Handles lblCi.Click
-
     End Sub
 End Class
