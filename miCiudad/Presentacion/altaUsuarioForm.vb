@@ -36,27 +36,15 @@
                 usuarioNueva.Apellido = apellidoUsuario
                 usuarioNueva.Passwd = contrasenia
 
-                'logica.altaUsuario(usuarioNueva)
-                'Dim res = logica.altaUsuario(usuarito As ClaseUsuario)
-
-                'If res Then
-                'MsgBox("Eliminado")
-                'tbxCi.Clear()
-                'End If
-                'MsgBox("Se dio de alta el usuario con la cedula " + ciUsuario)
-
-
-                tbxCorreo.Text = ""
-                tbxCi.Text = ""
-                tbxNombre.Text = ""
-                tbxApellido.Text = ""
-                tbxContrasenia.Text = ""
-
+                logica.altaUsuario(usuarioNueva)
+                MsgBox("Este usuario fue ingresado")
             Else
                 'Por si cualquier casillero esta vacio
                 If emailUsuario = "" Or ciUsuario.ToString = "" Or nombreUsuario = "" Or apellidoUsuario = "" Or contrasenia = "" Then
                     MsgBox("No puedes dejar ninguna casilla vacia")
                 End If
+
+
             End If
 
         Catch ex As Exception
