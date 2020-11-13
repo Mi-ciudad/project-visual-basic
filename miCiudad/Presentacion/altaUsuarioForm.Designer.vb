@@ -34,11 +34,11 @@ Partial Class formAltaUsuario
         Me.tbxApellido = New System.Windows.Forms.TextBox()
         Me.lblCi = New System.Windows.Forms.Label()
         Me.tbxCi = New System.Windows.Forms.TextBox()
-        Me.btnBorrar = New System.Windows.Forms.Button()
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.pbxVectorAltaUsuario = New System.Windows.Forms.PictureBox()
         Me.pbxLinea = New System.Windows.Forms.PictureBox()
         Me.pbxRectangulo = New System.Windows.Forms.PictureBox()
+        Me.btnBorrar = New System.Windows.Forms.Button()
         CType(Me.pbxVectorAltaUsuario, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxLinea, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pbxRectangulo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -156,20 +156,6 @@ Partial Class formAltaUsuario
         Me.tbxCi.Size = New System.Drawing.Size(196, 35)
         Me.tbxCi.TabIndex = 49
         '
-        'btnBorrar
-        '
-        Me.btnBorrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer))
-        Me.btnBorrar.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnBorrar.FlatAppearance.BorderSize = 0
-        Me.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
-        Me.btnBorrar.Location = New System.Drawing.Point(390, 507)
-        Me.btnBorrar.Name = "btnBorrar"
-        Me.btnBorrar.Size = New System.Drawing.Size(97, 36)
-        Me.btnBorrar.TabIndex = 51
-        Me.btnBorrar.Text = "Vaciar"
-        Me.btnBorrar.UseVisualStyleBackColor = False
-        '
         'btnAceptar
         '
         Me.btnAceptar.AutoSize = True
@@ -211,6 +197,20 @@ Partial Class formAltaUsuario
         Me.pbxRectangulo.TabIndex = 33
         Me.pbxRectangulo.TabStop = False
         '
+        'btnBorrar
+        '
+        Me.btnBorrar.AutoSize = True
+        Me.btnBorrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(120, Byte), Integer))
+        Me.btnBorrar.FlatAppearance.BorderSize = 0
+        Me.btnBorrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.5!)
+        Me.btnBorrar.Location = New System.Drawing.Point(392, 507)
+        Me.btnBorrar.Name = "btnBorrar"
+        Me.btnBorrar.Size = New System.Drawing.Size(97, 36)
+        Me.btnBorrar.TabIndex = 54
+        Me.btnBorrar.Text = "Cancelar"
+        Me.btnBorrar.UseVisualStyleBackColor = False
+        '
         'formAltaUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -218,8 +218,8 @@ Partial Class formAltaUsuario
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.ClientSize = New System.Drawing.Size(1104, 611)
-        Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.btnBorrar)
+        Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.lblCi)
         Me.Controls.Add(Me.tbxCi)
         Me.Controls.Add(Me.Label5)
@@ -260,6 +260,6 @@ Partial Class formAltaUsuario
     Private WithEvents tbxApellido As TextBox
     Friend WithEvents lblCi As Label
     Private WithEvents tbxCi As TextBox
-    Friend WithEvents btnBorrar As Button
     Friend WithEvents btnAceptar As Button
+    Friend WithEvents btnBorrar As Button
 End Class

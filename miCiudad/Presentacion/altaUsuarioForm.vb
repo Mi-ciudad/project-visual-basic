@@ -1,13 +1,5 @@
 ﻿Public Class formAltaUsuario
 
-    Private Sub btnBorrar_Click(sender As Object, e As EventArgs)
-        tbxCorreo.Text = ""
-        tbxCi.Text = ""
-        tbxNombre.Text = ""
-        tbxApellido.Text = ""
-        tbxContrasenia.Text = ""
-    End Sub
-
     Private Sub btnAceptar_Click_1(sender As Object, e As EventArgs) Handles btnAceptar.Click
         Try
 
@@ -37,7 +29,14 @@
                 usuarioNueva.Passwd = contrasenia
 
                 logica.altaUsuario(usuarioNueva)
+
                 MsgBox("Este usuario fue ingresado")
+
+                tbxCorreo.Text = ""
+                tbxCi.Text = ""
+                tbxNombre.Text = ""
+                tbxApellido.Text = ""
+                tbxContrasenia.Text = ""
             Else
                 'Por si cualquier casillero esta vacio
                 If emailUsuario = "" Or ciUsuario.ToString = "" Or nombreUsuario = "" Or apellidoUsuario = "" Or contrasenia = "" Then
@@ -54,6 +53,14 @@
 
     Private Sub altaUsuarioForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tbxContrasenia.PasswordChar = "*"
+    End Sub
+
+    Private Sub btnBorrar_Click_1(sender As Object, e As EventArgs) Handles btnBorrar.Click
+        tbxCorreo.Text = ""
+        tbxCi.Text = ""
+        tbxNombre.Text = ""
+        tbxApellido.Text = ""
+        tbxContrasenia.Text = ""
     End Sub
     'End Sub
     'Me.tbxNombre Border.CornerRadius

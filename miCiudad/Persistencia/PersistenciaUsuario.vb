@@ -1,7 +1,7 @@
 ﻿Imports Npgsql
 
 Public Class PersistenciaUsuario
-    Dim conexion As Npgsql.NpgsqlConnection
+    Dim conexion As New Npgsql.NpgsqlConnection
 
     Public Sub New()
 
