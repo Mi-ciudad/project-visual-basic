@@ -17,7 +17,7 @@
 
             Dim logica As New LogicaReporte()
             logica.asignarReporte(reporteNuevo)
-
+            MsgBox("Este estado fue modificado")
         Catch ex As Exception
             MsgBox("un error: " + ex.Message)
         End Try
