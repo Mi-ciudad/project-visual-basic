@@ -1,8 +1,5 @@
 ﻿Public Class formAltaUsuario
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
     Private Sub btnAceptar_Click_1(sender As Object, e As EventArgs) Handles btnAceptar.Click
         Try
 
@@ -64,10 +61,7 @@
         tbxNombre.Text = ""
         tbxApellido.Text = ""
         tbxContrasenia.Text = ""
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
     End Sub
     'End Sub
     'Me.tbxNombre Border.CornerRadius
