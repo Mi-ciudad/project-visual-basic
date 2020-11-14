@@ -33,6 +33,7 @@
 
             Dim logica As New LogicaUsuario()
             logica.modificarUsuario(usuarioNueva)
+            MsgBox("Este usuario fue modificado")
         Catch ex As Exception
             MsgBox("un error: " + ex.Message)
         End Try
