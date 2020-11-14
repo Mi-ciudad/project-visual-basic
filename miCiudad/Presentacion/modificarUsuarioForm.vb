@@ -25,6 +25,12 @@
             usuarioNueva.Apellido = apellidoUsuario
             usuarioNueva.Passwd = contrasenia
 
+            tbxCorreo.Text = ""
+            tbxCi.Text = ""
+            tbxNombre.Text = ""
+            tbxApellido.Text = ""
+            tbxContrasenia.Text = ""
+
             Dim logica As New LogicaUsuario()
             logica.modificarUsuario(usuarioNueva)
         Catch ex As Exception

@@ -16,15 +16,16 @@ Public Class PersistenciaUsuario
             cmd.Connection = conexion
             Dim cadenaComandos As String
 
-            cadenaComandos = "UPDATE usuarios SET password =md5(@password), email=@email, nombre =@name, apellido =@surname, tipoUsuario =@userType, userName=@userType WHERE ci = @ci;"
+            cadenaComandos = "UPDATE usuarios SET password =md5(@password), email=@email, nombre =@name, apellido =@surname, tipoUsuario =@userType WHERE ci = @ci;"
             cmd.CommandText = cadenaComandos
 
-            cmd.Parameters.Add("@email", NpgsqlTypes.NpgsqlDbType.Varchar, 50).Value = usuarito.Email
             cmd.Parameters.Add("@password", NpgsqlTypes.NpgsqlDbType.Varchar, 100).Value = usuarito.Passwd
-            cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = usuarito.Ci
+            cmd.Parameters.Add("@email", NpgsqlTypes.NpgsqlDbType.Varchar, 50).Value = usuarito.Email
+
             cmd.Parameters.Add("@name", NpgsqlTypes.NpgsqlDbType.Varchar, 30).Value = usuarito.Nombre
             cmd.Parameters.Add("@surname", NpgsqlTypes.NpgsqlDbType.Varchar, 30).Value = usuarito.Apellido
-            cmd.Parameters.Add("@userType", NpgsqlTypes.NpgsqlDbType.Varchar, 10).Value = "Cliente"
+            cmd.Parameters.Add("@userType", NpgsqlTypes.NpgsqlDbType.Varchar, 20).Value = "Usuario"
+            cmd.Parameters.Add("@ci", NpgsqlTypes.NpgsqlDbType.Integer).Value = usuarito.Ci
 
             cmd.ExecuteReader()
         Catch ex As Exception
